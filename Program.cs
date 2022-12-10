@@ -357,7 +357,7 @@ Console.WriteLine($"Расстояние между точками = {DistXY(x1,
 //5 -> 1, 8, 27, 64, 125
 
 //Задача 3 из дз на 07.12.22
-
+/*
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 double num_orig = num;
@@ -367,6 +367,7 @@ while (x <= num){
     x++;
     Console.Write(num_orig + ", ");
 }
+*/
 
 //Задача 26: Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
 //456 -> 3
@@ -470,6 +471,66 @@ for (int i = 0; i < numbers.Length; i++)
     numbers[i] = rnd.Next(0, 2);
 }
 string d = String.Join(",", numbers);
+
+Console.WriteLine(d);
+*/
+
+//Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+//3, 5 -> 243 (3⁵)
+//2, 4 -> 16
+
+//Задача 1 из дз на 09.12.22
+/*
+Console.WriteLine("Введите число");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите степень");
+int p = Convert.ToInt32(Console.ReadLine());
+
+int pow = (int)Math.Pow(x, p);
+Console.WriteLine($"Число {x} в степени {p} будет равно {pow}");
+*/
+
+//Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+//452 -> 11
+//82 -> 10
+//9012 -> 12
+
+//Задача 2 из дз на 09.12.22
+
+/*
+Console.WriteLine("Введите число");
+try{
+    int num = Convert.ToInt32(Console.ReadLine());
+    int num_orig = num;
+    int rev = 0;
+    while(num > 0){
+        int dig = 0;
+        dig = num % 10;
+        rev = rev + dig;
+        num = num / 10;
+    }
+    Console.WriteLine(rev);
+} catch (Exception ex){
+    Console.WriteLine("Некорректный ввод", ex);
+}
+*/
+
+//Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+//1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+//6, 1, 33 -> [6, 1, 33]
+
+//Задача 3 из дз на 09.12.22
+
+/*
+int[] arr = new int[8];
+
+Random rnd = new Random();
+
+for (int i = 0; i < arr.Length; i++)
+{
+    arr[i] = rnd.Next(0, 1000);
+}
+string d = String.Join(",", arr);
 
 Console.WriteLine(d);
 */
